@@ -38,4 +38,4 @@ export default {
 
     
 
-</style>../../../data/info
+</style>

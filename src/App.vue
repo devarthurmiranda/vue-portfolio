@@ -1,18 +1,17 @@
 <template>
   <Navbar />
-
-  <Footer />
+  <Intro />
 </template>
 
 <script>
 import Navbar from './components/Navbar.vue'
-import Footer from './components/Footer.vue'
+import Intro from './components/Intro.vue'
 
 export default {
   name: 'App',
   components: {
     Navbar,
-    Footer
+    Intro,
   },
   mounted() {
     this.changePageTitle('Portfolio');
@@ -34,5 +33,6 @@ export default {
   text-align: center;
   color: #181f25;
   margin-top: 60px;
+  background-color: rgb(25, 25, 25);
 }
 </style>

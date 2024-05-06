@@ -1,16 +1,14 @@
 <template>
     <div>
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p class="text-center copyright">
-                            Arthur Miranda &copy; 2024 All Rights Reserved
-                        </p>
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>
+                        Arthur Miranda &copy; 2024 All Rights Reserved
+                    </p>
                 </div>
             </div>
-        </footer>
+        </div>
     </div>
 </template>
 
@@ -21,14 +19,14 @@ export default {
 </script>
 
 <style>
-    .footer{
+    .container{
+        padding: 10px;
         position: fixed;
-        bottom:0;
-        width:100%;
-        background-color: #1a1f25;
-    }
-
-    .copyright {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgb(0,0,0);
         color: white;
+        text-align: center;
     }
 </style>
