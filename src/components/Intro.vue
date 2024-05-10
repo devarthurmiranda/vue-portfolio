@@ -7,10 +7,7 @@
             <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 text-center">
                 <h1>Hi, I'm Arthur Miranda!</h1>
                 <p>
-                    a 4th year computer science student at the Federal Institute Goiano.
-                </p>
-                <p>
-                    I'm currently looking for new opportunities. If you'd like to work together, please don't hesitate to reach out.
+                    a Software Developer and 4th year Computer Science student at the Federal Institute Goiano.
                 </p>
                 <div class="socials">
                     <a href=""><img class="img-socials" src="../assets/github.png" alt="github"></a>
@@ -28,10 +25,10 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     .container {
         padding-top: 100px;
-        padding-bottom: 400px;
+        padding-bottom: 200px;
     }
 
     .row h1 {

@@ -31,7 +31,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     .navbar {
         background-color: #17181a;
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);

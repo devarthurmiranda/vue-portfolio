@@ -18,7 +18,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     .container{
         padding: 10px;
         position: fixed;

@@ -5,7 +5,6 @@
 | Description | Example |
 | - | - |
 | Intro | aa |
-| About | aa |
 | Projects | aa |
 | Skills | aa |
 | Teams | aa |

@@ -21,7 +21,7 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
 
     .logo-div:hover .title-span {
         letter-spacing: 0px;
