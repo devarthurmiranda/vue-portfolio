@@ -1,7 +1,9 @@
 <template>
+  <div class="container">
     <div class="row">
       <h2>Skills</h2>
-      <div class="col-md-6" v-for="(skill, index) in skills" :key="index">
+      <div class="col-md-3" v-for="(skill, index) in skills" :key="index">
+      <a href="">        
         <v-card>
           <v-card-title>
             <img :src="skill.icon" alt="" class="icon">
@@ -10,8 +12,12 @@
             <p>{{ skill.name }}</p>
           </v-card-text>
         </v-card>
+      </a>
+
       </div>
     </div>
+  </div>
+    
   </template>
   
   <script>
@@ -28,15 +34,24 @@
   </script>
   
   <style scoped>
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .container {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
   h2 {
     text-align: center;
     color: #ffffff;
   }
   
   .row {
+    max-width: 100%;
     text-align: center;
-    width: 100%;
-    margin-top: 100px;
   }
 
   p {
@@ -44,8 +59,8 @@
   }
   
   .card {
-    max-width: 100px;
-    max-height: 100px;
+    width: 100px;
+    height: 100px;
     margin: 20px;
   }
 

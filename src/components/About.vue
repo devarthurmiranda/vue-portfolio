@@ -1,25 +1,45 @@
 <template>
+<div class="container">
     <div class="row">
-        <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12">
-            <h2>About me</h2>
+        <div class="col-sm">
+            <h2>{{ about.title }}</h2>
             <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
         </div>
-        <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12">
+        <div class="col-sm">
             <img src="../assets/coding.png" alt="">
         </div>
     </div>
+</div>
 </template>
 
 <script>
+import about from '../../data/about.js';
+
 export default {
-    name: 'HomeAbout'
+    name: 'HomeAbout',
+    data() {
+        return {
+            about: about
+        };
+    }
 }
 </script>
 
 <style scoped>
+    img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .container {
+        border: 2px solid red;
+        text-align: center;
+    }
+
     .row {
-        margin-left: 15%;
-        margin-right: 15%;
+        margin-top: 100px;
+        text-align: center;
+        max-width: 100%;
     }
 
     h2 {

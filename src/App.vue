@@ -3,7 +3,9 @@
   <Intro />
   <About />
   <Organizations />
+  <Projects />
   <Skills />
+  <Footer />
 </template>
 
 <script>
@@ -12,6 +14,8 @@ import Intro from './components/Intro.vue'
 import About from './components/About.vue'
 import Organizations from './components/Organizations.vue';
 import Skills from './components/Skills.vue';
+import Projects from './components/Projects.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   name: 'App',
@@ -20,7 +24,9 @@ export default {
     Intro,
     About,
     Organizations,
-    Skills
+    Projects,
+    Skills,
+    Footer
   },
   mounted() {
     this.changePageTitle('Portfolio');
@@ -34,17 +40,16 @@ export default {
 </script>
 
 <style>
-
+/**App Style */
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #181f25;
-  margin-top: 60px;
   background-color: rgb(25, 25, 25);
 }
 
+/**Scrollbar config */
 ::-webkit-scrollbar {
   width: 5px;
 }

@@ -1,34 +1,44 @@
 <template>
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 text-center">
+        <div class="row">
+            <div class="col-sm">
                 <img class="img-me" src="../assets/euu.png"/>
             </div>
-            <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 text-center">
-                <h1>Hi, I'm Arthur Miranda!</h1>
-                <p>
-                    a Software Developer and 4th year Computer Science student at the Federal Institute Goiano.
-                </p>
+            <div class="col-sm">
+                <h1>{{ intro.title }}</h1>
+                <p>{{ intro.description }}</p>
                 <div class="socials">
-                    <a href=""><img class="img-socials" src="../assets/github.png" alt="github"></a>
-                    <a href=""><img class="img-socials" src="../assets/linkedin.png" alt="linkedin"></a>
-                    <a href=""><img class="img-socials" src="../assets/youtube.png" alt="youtube"></a>
+                    <a href=""><img class="img-socials" src="../assets/socials/github.png" alt="github"></a>
+                    <a href=""><img class="img-socials" src="../assets/socials/linkedin.png" alt="linkedin"></a>
+                    <a href=""><img class="img-socials" src="../assets/socials/youtube.png" alt="youtube"></a>
                 </div>
             </div>
         </div>
     </div>
+
 </template>
 
 <script>
+import intro from '../../data/intro.js'
 export default {
-    name: 'HomeIntro'
+    name: 'HomeIntro',
+    data() {
+        return {
+            intro: intro
+        };
+    }
 }
 </script>
 
 <style scoped>
-    .container {
-        padding-top: 100px;
-        padding-bottom: 200px;
+    .container{
+        padding-top: 15%;
+        border: 2px solid red;
+    }
+
+    .row {
+        text-align: center;
+        width: 100%;
     }
 
     .row h1 {

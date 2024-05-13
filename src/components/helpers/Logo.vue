@@ -7,13 +7,13 @@
 </template>
 
 <script>
-import info from '../../../data/info';
+import logo from '../../../data/logo';
 
 export default {
     name: 'HomeLogo',
     data(){
         return {
-            title: info.title
+            title: logo.title
         } 
     }
 }
@@ -38,4 +38,4 @@ export default {
 
     
 
-</style>
+</style>../../../data/logo
