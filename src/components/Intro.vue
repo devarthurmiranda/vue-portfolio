@@ -2,9 +2,9 @@
     <div class="container">
         <div class="row">
             <div class="col-sm">
-                <img class="img-me" src="../assets/euu.png"/>
+                <img class="img-fluid" src="../assets/euu.png" />
             </div>
-            <div class="col-sm">
+            <div class="col-sm presentation">
                 <h1>{{ intro.title }}</h1>
                 <p>{{ intro.description }}</p>
                 <div class="socials">
@@ -31,37 +31,42 @@ export default {
 </script>
 
 <style scoped>
-    .container{
-        padding-top: 15%;
-        border: 2px solid red;
-    }
+.container {
+    padding-top: 100px;
+}
 
-    .row {
-        text-align: center;
-        width: 100%;
-    }
+.presentation {
+    padding-top: 50px;
+}
 
-    .row h1 {
-        font-size: 50px;
-        color: #ffffff;
-        
-    }
+.row {
+    text-align: center;
+    width: 100%;
+}
 
-    .img-me {
-        width: 300px;
-        border-radius: 50%;
-        border: 5px solid #ffffff;
-    }
+/** Image styles */
+.img-fluid {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+}
 
-    .img-socials {
-        width: 50px;
-        margin: 10px;
-    }
-
-    .row p {
-        font-size: 18px;
-        color: #ffffff;
-    }
+.img-socials {
+    width: 50px;
+    margin: 10px;
+}
 
 
+/** Text styles */
+.row h1 {
+    font-size: 50px;
+    color: #ffffff;
+
+}
+
+.row p {
+    font-size: 18px;
+    color: #ffffff;
+}
 </style>

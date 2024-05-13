@@ -47,9 +47,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: #181f25;
   background-color: rgb(25, 25, 25);
+  padding-top: 60px;
 }
 
-/**Scrollbar config */
+/**Scrollbar style */
 ::-webkit-scrollbar {
   width: 5px;
 }

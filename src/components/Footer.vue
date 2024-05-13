@@ -1,5 +1,5 @@
 <template>
-    <footer>
+    <footer class="bg-dark">
         <div class="container">
             <div class="row">
                 <div class="col-sm">
@@ -9,7 +9,7 @@
                 </div>
                 <div class="col-sm">
                     <p>
-                    {{ info.email }}
+                        {{ info.email }}
                     </p>
                 </div>
             </div>
@@ -32,20 +32,15 @@ export default {
 </script>
 
 <style scoped>
-    footer{
-        background-color: rgb(73, 69, 69);
-        padding-top: 20px;
-        bottom: 0;
-        left: 0;
-        max-width: 100%;
-    }
+footer {
+    padding-top: 20px;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+}
 
-    .container{
-        background-color: rgb(73, 69, 69);
-    }
-
-    .row{
-        color: white;
-        text-align: center;
-    }
+.row {
+    color: white;
+    text-align: center;
+}
 </style>

@@ -1,15 +1,15 @@
 <template>
-<div class="container">
-    <div class="row">
-        <div class="col-sm">
-            <h2>{{ about.title }}</h2>
-            <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
-        </div>
-        <div class="col-sm">
-            <img src="../assets/coding.png" alt="">
+    <div class="container d-flex justify-content-between">
+        <div class="row">
+            <div class="col-sm">
+                <h2>{{ about.title }}</h2>
+                <p>{{ about.content }}</p>
+            </div>
+            <div class="col-sm ">
+                <img class="img-fluid" src="../assets/coding.png" alt="">
+            </div>
         </div>
     </div>
-</div>
 </template>
 
 <script>
@@ -26,28 +26,29 @@ export default {
 </script>
 
 <style scoped>
-    img {
-        width: 300px;
-        height: 300px;
-    }
+.container {
+    border: 2px solid red;
+}
 
-    .container {
-        border: 2px solid red;
-        text-align: center;
-    }
+.row {
+    margin-top: 200px;
+    max-width: 100%;
+    text-align: center;
+}
 
-    .row {
-        margin-top: 100px;
-        text-align: center;
-        max-width: 100%;
-    }
+/* Image styles */
+img {
+    width: 300px;
+    height: 300px;
+}
 
-    h2 {
-        color: #ffffff;
-    }
+/* Text styles */
+h2 {
+    color: #ffffff;
+}
 
-    p {
-        font-size: 18px;
-        color: #ffffff;
-    }
+p {
+    font-size: 18px;
+    color: #ffffff;
+}
 </style>
