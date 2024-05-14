@@ -50,6 +50,9 @@ export default {
   padding-top: 60px;
 }
 
+/* Slide styles */
+.vueperslides__arrow {color: white}
+
 /**Scrollbar style */
 ::-webkit-scrollbar {
   width: 5px;

@@ -1,6 +1,6 @@
 <template>
     <footer class="bg-dark">
-        <div class="container">
+        <div class="container-sm container">
             <div class="row">
                 <div class="col-sm">
                     <p>
@@ -37,6 +37,7 @@ footer {
     bottom: 0;
     left: 0;
     max-width: 100%;
+    margin-top: 10%;
 }
 
 .row {

@@ -1,29 +1,33 @@
 <template>
-  <div class="container">
-    <v-card>
-      <v-card-title>
-        <h2>Projects</h2>
-      </v-card-title>
-      <v-card-text>
-        <vueper-slides class="no-shadow" :visible-slides="3" :slide-ratio="1 / 4" :dragging-distance="70">
-          <vueper-slide v-for="(project, index) in projects" :key="index" :title="project.title"
-            :image="project.img"></vueper-slide>
-        </vueper-slides>
-      </v-card-text>
-    </v-card>
+  <div class="title">
+    <h2>Projects</h2>
   </div>
+  <div class="container-sm container">
+    <Swiper>
+      <SwiperSlide v-for="(project, index) in projects" :key="index">
+        <v-card>
+          <v-card-title><p>{{ project.name }}</p></v-card-title>
+          <v-card-text>
+            <p>{{ project.description }}</p>
+            <img class="slide" :src="project.img" :alt="project.name">
+          </v-card-text>
+        </v-card>
+      </SwiperSlide>
+    </swiper>
+  </div>
+
 </template>
 
 <script>
-import { VueperSlide, VueperSlides } from 'vueperslides';
 import projects from '../../data/projects.js';
-import 'vueperslides/dist/vueperslides.css';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
 
 export default {
   name: 'HomeProjects',
   components: {
-    VueperSlides,
-    VueperSlide
+    Swiper,
+    SwiperSlide,
   },
   data() {
     return {
@@ -35,14 +39,27 @@ export default {
 
 <style scoped>
 .container {
-  margin-top: 100px;
+  margin-top: 15%;
   width: 70%;
+}
+
+
+.slide{
+  width: 70%;
+  height: 10%;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
+.title{
+  margin-bottom: 5%;
 }
 
 /* Text styles */
 h2 {
   text-align: center;
-  color: #ffffff;
+  color: rgb(155, 74, 74);
   margin-bottom: 50px;
 }
 

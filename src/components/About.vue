@@ -1,11 +1,11 @@
 <template>
-    <div class="container d-flex justify-content-between">
+    <div class="container-sm container d-flex justify-content-between">
         <div class="row">
-            <div class="col-sm">
+            <div class="col-sm description">
                 <h2>{{ about.title }}</h2>
                 <p>{{ about.content }}</p>
             </div>
-            <div class="col-sm ">
+            <div class="col-sm canva">
                 <img class="img-fluid" src="../assets/coding.png" alt="">
             </div>
         </div>
@@ -27,14 +27,18 @@ export default {
 
 <style scoped>
 .container {
-    border: 2px solid red;
+    width: 70%;
 }
 
 .row {
     margin-top: 200px;
-    max-width: 100%;
+    
+}
+
+.canva {
     text-align: center;
 }
+
 
 /* Image styles */
 img {
@@ -44,7 +48,7 @@ img {
 
 /* Text styles */
 h2 {
-    color: #ffffff;
+    color: rgb(155, 74, 74);
 }
 
 p {

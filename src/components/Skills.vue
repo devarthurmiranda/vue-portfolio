@@ -1,9 +1,12 @@
 <template>
-  <div class="container">
+  <div class="container-sm container">
     <div class="row">
-      <h2>Skills</h2>
+      <div class="title">
+        <h2>Skills</h2>
+      </div>
+      
       <div class="col-md-3" v-for="(skill, index) in skills" :key="index">
-        <a href="">
+        <a :href="skill.wiki">
           <v-card>
             <v-card-title>
               <img :src="skill.icon" alt="" class="icon">
@@ -33,19 +36,24 @@ export default {
 
 <style scoped>
 .container {
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin-top: 15%;
+  width: 80%;
+  text-align: center;
 }
 
 .row {
   max-width: 100%;
-  text-align: center;
+}
+
+.title {
+  margin-bottom: 5%;
 }
 
 .card {
   width: 100px;
   height: 100px;
-  margin: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /* Image styles */
@@ -57,7 +65,7 @@ export default {
 /* Text styles */
 h2 {
   text-align: center;
-  color: #ffffff;
+  color: rgb(155, 74, 74);
 }
 
 a {

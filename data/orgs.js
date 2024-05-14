@@ -1,5 +1,5 @@
 let orgs =[
-    { name: 'complem', img: require('@/assets/orgs/complem.jpeg') },
+    { name: 'pekicode', img: require('@/assets/orgs/pekicode.png') },
     { name: 'topnet', img: require('@/assets/orgs/topnet.png') }
   ];
 

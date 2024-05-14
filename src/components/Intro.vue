@@ -1,7 +1,7 @@
 <template>
-    <div class="container">
+    <div class="container-sm container">
         <div class="row">
-            <div class="col-sm">
+            <div class="col-sm image-me">
                 <img class="img-fluid" src="../assets/euu.png" />
             </div>
             <div class="col-sm presentation">
@@ -32,7 +32,8 @@ export default {
 
 <style scoped>
 .container {
-    padding-top: 100px;
+    padding-top: 10%;
+    width: 80%;
 }
 
 .presentation {
@@ -40,9 +41,15 @@ export default {
 }
 
 .row {
-    text-align: center;
-    width: 100%;
+    max-width: 100%;
 }
+
+.socials {
+    padding-top: 3%;
+    text-align: center;
+}
+
+
 
 /** Image styles */
 .img-fluid {
@@ -50,6 +57,10 @@ export default {
     height: 300px;
     border-radius: 50%;
     border: 5px solid #ffffff;
+}
+
+.image-me {
+    text-align: center;
 }
 
 .img-socials {
