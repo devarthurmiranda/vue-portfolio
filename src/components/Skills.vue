@@ -5,7 +5,7 @@
         <h2>Skills</h2>
       </div>
       
-      <div class="col-md-3" v-for="(skill, index) in skills" :key="index">
+      <div id="skills" class="col-md-3" v-for="(skill, index) in skills" :key="index">
         <a :href="skill.wiki">
           <v-card>
             <v-card-title>

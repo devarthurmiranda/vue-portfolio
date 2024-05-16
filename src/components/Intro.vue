@@ -1,16 +1,14 @@
 <template>
-    <div class="container-sm container">
+    <div class="container-sm container d-flex justify-content-between">
         <div class="row">
-            <div class="col-sm image-me">
+            <div class="col-sm image-me ">
                 <img class="img-fluid" src="../assets/euu.png" />
             </div>
             <div class="col-sm presentation">
                 <h1>{{ intro.title }}</h1>
                 <p>{{ intro.description }}</p>
                 <div class="socials">
-                    <a href=""><img class="img-socials" src="../assets/socials/github.png" alt="github"></a>
-                    <a href=""><img class="img-socials" src="../assets/socials/linkedin.png" alt="linkedin"></a>
-                    <a href=""><img class="img-socials" src="../assets/socials/youtube.png" alt="youtube"></a>
+                    <a v-for="social in socials" :href="social.link" :key="social"><img class="img-socials" :src="social.img" alt="github"></a>
                 </div>
             </div>
         </div>
@@ -20,11 +18,13 @@
 
 <script>
 import intro from '../../data/intro.js'
+import socials from '../../data/socials.js'
 export default {
     name: 'HomeIntro',
     data() {
         return {
-            intro: intro
+            intro: intro,
+            socials: socials
         };
     }
 }
@@ -33,7 +33,7 @@ export default {
 <style scoped>
 .container {
     padding-top: 10%;
-    width: 80%;
+    width: 70%;
 }
 
 .presentation {
@@ -59,13 +59,16 @@ export default {
     border: 5px solid #ffffff;
 }
 
-.image-me {
-    text-align: center;
-}
-
 .img-socials {
     width: 50px;
     margin: 10px;
+}
+
+
+
+.img-fluid:hover {
+    transition: 400ms;
+    border: 5px solid rgb(155, 74, 74);
 }
 
 

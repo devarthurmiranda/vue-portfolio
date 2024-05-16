@@ -1,19 +1,19 @@
 <template>
-  <div class="title">
-    <h2>Projects</h2>
-  </div>
-  <div class="container-sm container">
-    <Swiper>
+  <div class="container-sm container w-70 p-3">
+    <div id="projects" class="title">
+      <h2>Projects</h2>
+    </div>
+    <Swiper :pagination="{dynamicBullets: true}" :modules="modules">
       <SwiperSlide v-for="(project, index) in projects" :key="index">
-        <v-card>
-          <v-card-title><p>{{ project.name }}</p></v-card-title>
-          <v-card-text>
-            <p>{{ project.description }}</p>
-            <img class="slide" :src="project.img" :alt="project.name">
-          </v-card-text>
-        </v-card>
+              <div class="slideCard">
+                  <img class="img-fluid" :src="project.img" :alt="project.name"> 
+              <a :href="project.link">
+                <h3>{{ project.title }}</h3>
+              </a>
+                <p>{{ project.description }}</p>
+              </div>   
       </SwiperSlide>
-    </swiper>
+    </Swiper>
   </div>
 
 </template>
@@ -21,13 +21,21 @@
 <script>
 import projects from '../../data/projects.js';
 import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Pagination } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/pagination';
+
 
 export default {
   name: 'HomeProjects',
   components: {
     Swiper,
     SwiperSlide,
+  },
+  setup() {
+    return {
+      modules: [Pagination],
+    };
   },
   data() {
     return {
@@ -40,27 +48,54 @@ export default {
 <style scoped>
 .container {
   margin-top: 15%;
-  width: 70%;
 }
 
-
-.slide{
-  width: 70%;
-  height: 10%;
-  margin-left: 20px;
-  margin-right: 20px;
-
+.swiper{
+  text-align: center;
+  padding: 20px;
 }
 
-.title{
+.swiper-slide{
+  display: flex;
+  justify-content: center;
+}
+
+.slideCard{
+  height: 400px;
+  width: 90%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  background-color: #191919;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.swiper-slide img{
+  border-radius: 20px;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.title {
   margin-bottom: 5%;
 }
 
+.slide{
+  width: 400px;
+  height: 400px;
+} 
+
 /* Text styles */
+
 h2 {
   text-align: center;
   color: rgb(155, 74, 74);
   margin-bottom: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 p {

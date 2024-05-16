@@ -1,28 +1,25 @@
 let projects = [
     { 
-        title: 'AM Dev',
+        title: 'Web Mailer',
         img: require('@/assets/projects/mailer.png'),
-        description: 'My personal website. Made with Vue.js and Vuetify.',
+        description: 'Mailer is a web application that allows you to send emails to multiple recipients.',
+        stack: 'Angular, NodeJS',
         link: 'https://arthurmorais.dev'
     },
     { 
-        title: 'AM Dev',
+        title: 'Hotel RJ',
         img: require('@/assets/projects/riodejaneiro.png'),
-        description: 'My personal website. Made with Vue.js and Vuetify.',
+        description: 'A hotel website.',
+        stack: 'Bootstrap',
         link: 'https://arthurmorais.dev'
     },
     { 
-        title: 'AM Dev',
+        title: 'Post-it',
         img: require('@/assets/projects/postit.png'),
-        description: 'My personal website. Made with Vue.js and Vuetify.',
+        description: 'A simple post-it web application.',
+        stack: 'Angular, NodeJS',
         link: 'https://arthurmorais.dev'
     },
-    {
-        title: 'AM Dev',
-        img: require('@/assets/projects/imc.png'),
-        description: 'My personal website. Made with Vue.js and Vuetify.',
-        link: 'https://arthurmorais.dev'
-    }
 ];
 
 export default projects;

@@ -1,6 +1,6 @@
 <template>
-    <div class="container-sm container d-flex justify-content-between">
-        <div class="row">
+    <div id="about" class="container-sm container d-flex justify-content-between">
+        <div  class="row">
             <div class="col-sm description">
                 <h2>{{ about.title }}</h2>
                 <p>{{ about.content }}</p>
@@ -41,9 +41,9 @@ export default {
 
 
 /* Image styles */
-img {
-    width: 300px;
-    height: 300px;
+.img-fluid {
+    width: 100%;
+    height: 100%;
 }
 
 /* Text styles */
