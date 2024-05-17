@@ -1,6 +1,8 @@
 let about = {
-        title: 'About Me',
-        content: 'I am a software developer with a passion for creating web and mobile applications. I have experience in developing applications using VueJS, NodeJS, and Flutter. I am also familiar with Java and Python. I am currently working as a software developer at a tech company. I am always eager to learn new technologies and improve my skills. I am a team player and I enjoy working with others to create amazing applications. I am looking forward to new opportunities to work on exciting projects.'
+        title: 'Sobre mim',
+        first_paragraph: 'Comecei a programar em 2020, pouco antes de entrar na faculdade, onde me apaixonei pelo desenvolvimento de Software. Atualmente estou participando de projetos na empresa júnior PekiCode, onde tenho a oportunidade de trabalhar com tecnologias como Flutter e NodeJS.',
+        second_paragraph: 'Como pessoa, tenho 20 anos e gosto de sempre estar aprendendo algo novo.',
+        third_paragraph: 'Meu objetivo é garantir que os projetos que participo sejam entregues com a melhor qualidade possível, e que possam ajudar as pessoas de alguma forma.',
 }
 
 export default about;

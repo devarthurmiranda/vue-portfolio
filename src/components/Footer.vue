@@ -3,14 +3,19 @@
         <div class="container-sm container">
             <div class="row">
                 <div class="col-sm">
-                    <p>
-                        Arthur Miranda &copy; 2024 All Rights Reserved
-                    </p>
+                    <a href="">
+                        <p>
+                            Arthur Miranda &copy; 2024 All Rights Reserved
+                        </p>
+                    </a>
+
                 </div>
                 <div class="col-sm">
-                    <p>
-                        {{ info.email }}
-                    </p>
+                    <a href="">
+                        <p>
+                            {{ info.email }}
+                        </p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -43,5 +48,16 @@ footer {
 .row {
     color: white;
     text-align: center;
+}
+
+.col-sm a {
+    color: white;
+    text-decoration: none;
+}
+
+.col-sm a:hover {
+    text-decoration: none;
+    color: rgb(155, 74, 74);
+    transition: 400ms;
 }
 </style>

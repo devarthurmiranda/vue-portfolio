@@ -1,6 +1,6 @@
 let intro = {
-    title: "Hi, I'm Arthur Miranda!",
-    description: "a Software Developer and 4th year Computer Science student at the Federal Institute Goiano."
+    title: "Olá, sou Arthur Miranda!",
+    description: "um Desenvolvedor de Software e estudante no 4º ano de Ciência da Computação no Instituto Federal Goiano."
 
 };
 

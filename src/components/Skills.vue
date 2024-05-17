@@ -2,7 +2,7 @@
   <div class="container-sm container">
     <div class="row">
       <div class="title">
-        <h2>Skills</h2>
+        <h2>Tech Skills</h2>
       </div>
       
       <div id="skills" class="col-md-3" v-for="(skill, index) in skills" :key="index">
@@ -37,13 +37,11 @@ export default {
 <style scoped>
 .container {
   margin-top: 15%;
-  width: 80%;
+  width: 70%;
   text-align: center;
 }
 
-.row {
-  max-width: 100%;
-}
+
 
 .title {
   margin-bottom: 5%;
@@ -66,14 +64,17 @@ export default {
 h2 {
   text-align: center;
   color: rgb(155, 74, 74);
+  font-weight: bold;
 }
 
-a {
-  text-decoration: none;
-  color: #ffffff;
+.col-md-3 a {
+    color: white;
+    text-decoration: none;
 }
 
-p {
-  color: #ffffff;
+.col-md-3 a:hover {
+    text-decoration: none;
+    color: rgb(155, 74, 74);
+    transition: 400ms;
 }
 </style>

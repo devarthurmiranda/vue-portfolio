@@ -1,7 +1,7 @@
 <template>
-  <div class="container-sm container w-70 p-3">
-    <div id="projects" class="title">
-      <h2>Projects</h2>
+  <div id="projects" class="container container-sm  w-70 p-3">
+    <div class="title">
+      <h2>Projetos</h2>
     </div>
     <Swiper :pagination="{dynamicBullets: true}" :modules="modules">
       <SwiperSlide v-for="(project, index) in projects" :key="index">
@@ -46,8 +46,12 @@ export default {
 </script>
 
 <style scoped>
-.container {
+#projects {
   margin-top: 15%;
+}
+
+.container {
+  width: 70%;
 }
 
 .swiper{
@@ -62,7 +66,7 @@ export default {
 
 .slideCard{
   height: 400px;
-  width: 90%;
+  width: 100%;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   background-color: #191919;
   padding: 20px;
@@ -76,26 +80,32 @@ export default {
   max-height: 80%;
 }
 
-.title {
-  margin-bottom: 5%;
-}
-
 .slide{
   width: 400px;
   height: 400px;
 } 
 
 /* Text styles */
-
 h2 {
   text-align: center;
   color: rgb(155, 74, 74);
-  margin-bottom: 50px;
+  font-weight:600;
+}
+
+h3 {
+  font-weight: 600;
 }
 
 a {
   text-decoration: none;
   color: #ffffff;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(155, 74, 74);
+  transition: 300ms;
 }
 
 p {

@@ -47,14 +47,14 @@ export default {
 .socials {
     padding-top: 3%;
     text-align: center;
+    display: flex;
 }
 
 
 
 /** Image styles */
 .img-fluid {
-    width: 300px;
-    height: 300px;
+    width: 70%;
     border-radius: 50%;
     border: 5px solid #ffffff;
 }
@@ -74,8 +74,9 @@ export default {
 
 /** Text styles */
 .row h1 {
-    font-size: 50px;
+    font-size: 40px;
     color: #ffffff;
+    font-weight: 600;
 
 }
 
