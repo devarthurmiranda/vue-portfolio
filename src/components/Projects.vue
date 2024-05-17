@@ -77,6 +77,10 @@ export default {
     margin: 10px;
   }
 
+  .container {
+    width: 70%;
+  }
+
 
 }
 
