@@ -28,9 +28,20 @@ export default {
 </script>
 
 <style scoped>
-.container {
-    width: 70%;
-    padding-top: 4%;
+
+@media screen and (max-width: 768px){
+    .container {
+        width: 90%;
+        padding-top: 4%;
+        margin-left: 15%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .container {
+        width: 70%;
+        padding-top: 4%;
+    }
 }
 
 .row {

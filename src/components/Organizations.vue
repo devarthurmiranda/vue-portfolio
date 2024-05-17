@@ -69,7 +69,7 @@ export default {
     }
 
     .slideCard {
-        height: 400px;
+        height: 450px;
         width: 100%;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
         background-color: #171717;
