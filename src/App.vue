@@ -50,8 +50,13 @@ export default {
   padding-top: 60px;
 }
 
-/* Slide styles */
-.vueperslides__arrow {color: white}
+.swiper-pagination-bullet-active {
+  background-color: #f5f5f5;
+}
+
+.swiper-pagination-bullet {
+  background-color: #555454;
+}
 
 /**Scrollbar style */
 ::-webkit-scrollbar {

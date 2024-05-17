@@ -50,9 +50,37 @@ export default {
   margin-top: 15%;
 }
 
-.container {
-  width: 70%;
+@media screen and (max-width: 768px){
+  .slideCard{
+    height: 350px;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    background-color: #191919;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px;
+  }
+
+  .container {
+    width: 90%;
+  }
 }
+
+@media screen and (min-width: 768px){
+  .slideCard{
+    height: 400px;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    background-color: #191919;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px;
+  }
+
+
+}
+
+
 
 .swiper{
   text-align: center;
@@ -64,15 +92,7 @@ export default {
   justify-content: center;
 }
 
-.slideCard{
-  height: 400px;
-  width: 100%;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-  background-color: #191919;
-  padding: 20px;
-  border-radius: 20px;
-  margin: 10px;
-}
+
 
 .swiper-slide img{
   border-radius: 20px;
