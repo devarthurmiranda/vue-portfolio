@@ -33,7 +33,6 @@ export default {
     .container {
         width: 90%;
         padding-top: 4%;
-        margin-left: 15%;
     }
 }
 
