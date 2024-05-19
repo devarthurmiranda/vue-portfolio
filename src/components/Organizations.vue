@@ -6,8 +6,10 @@
         <Swiper :pagination="{ dynamicBullets: true }" :modules="modules">
             <SwiperSlide v-for="(org, index) in orgs" :key="index">
                 <div class="slideCard">
-                    <img class="img-fluid" :src="org.img" :alt="org.name">
-                    <a href=""><h3>{{ org.name }}</h3></a>
+                    <a :href=org.link >
+                        <img class="img-fluid" :src="org.img" :alt="org.name">
+                        <h3>{{ org.name }}</h3>
+                    </a>
                     <div class="description">
                         <p>{{ org.occupation }}</p>
                     </div>
@@ -72,7 +74,7 @@ export default {
         height: 450px;
         width: 100%;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-        background-color: #171717;
+        background-color: #262626;
         padding: 20px;
         border-radius: 20px;
         margin: 10px;
@@ -90,7 +92,7 @@ export default {
         height: 400px;
         width: 100%;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-        background-color: #171717;
+        background-color: #262626;
         padding: 20px;
         border-radius: 20px;
         margin: 10px;

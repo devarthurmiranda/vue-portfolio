@@ -6,10 +6,10 @@
     <Swiper :pagination="{dynamicBullets: true}" :modules="modules">
       <SwiperSlide v-for="(project, index) in projects" :key="index">
               <div class="slideCard">
-                  <img class="img-fluid" :src="project.img" :alt="project.name"> 
-              <a :href="project.link">
-                <h3>{{ project.title }}</h3>
-              </a>
+                <a :href="project.link">
+                    <img class="img-fluid" :src="project.img" :alt="project.name">
+                  <h3>{{ project.title }}</h3>
+                </a>
                 <p>{{ project.description }}</p>
               </div>   
       </SwiperSlide>
@@ -55,7 +55,7 @@ export default {
     height: 350px;
     width: 100%;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    background-color: #191919;
+    background-color: #262626;
     padding: 20px;
     border-radius: 20px;
     margin: 10px;
@@ -71,7 +71,7 @@ export default {
     height: 400px;
     width: 100%;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    background-color: #191919;
+    background-color: #262626;
     padding: 20px;
     border-radius: 20px;
     margin: 10px;

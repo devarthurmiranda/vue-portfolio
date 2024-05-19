@@ -3,7 +3,7 @@
         <div class="container-sm container">
             <div class="row">
                 <div class="col-sm">
-                    <a href="">
+                    <a href="https://opensource.org/license/artistic-2-0">
                         <p>
                             Arthur Miranda &copy; 2024 All Rights Reserved
                         </p>
@@ -11,7 +11,7 @@
 
                 </div>
                 <div class="col-sm">
-                    <a href="">
+                    <a :href="'mailto:'+ info.email">
                         <p>
                             {{ info.email }}
                         </p>

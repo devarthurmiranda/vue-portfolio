@@ -9,6 +9,11 @@ let socials = [
         img: require('@/assets/socials/github.png'),
         link: 'https://github.com/devarthurmiranda'
     },
+    {
+        title: 'Instagram',
+        img: require('@/assets/socials/instagram.png'),
+        link: 'https://www.instagram.com/arthurmirandadev/'
+    },
     { 
         title: 'Youtube',
         img: require('@/assets/socials/youtube.png'),
