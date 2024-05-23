@@ -10,6 +10,8 @@ let projects = [
         title: 'Calculadora de IMC',
         img: require('@/assets/projects/imc.png'),
         description: 'Aplicativo de Calculadora de Índice de Massa Corporal (IMC).',
+        stack: 'Flutter',
+        link: 'https://github.com/devarthurmiranda/app_imc/blob/main/README.md'
     },
     { 
         title: 'Hotel RJ',
