@@ -1,6 +1,10 @@
 # Hello there!
 > Here I present my VueJS portfolio, hope you like it!
 
+## Design
+![image](https://github.com/user-attachments/assets/1ef09025-433f-46b4-85fd-637812f24873)
+
+
 ## Features
 | Name | Description |
 | - | - |
