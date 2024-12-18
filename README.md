@@ -2,14 +2,13 @@
 > Here I present my VueJS portfolio, hope you like it!
 
 ## Features
-| Description | Example |
+| Name | Description |
 | - | - |
-| Intro | aa |
-| Projects | aa |
-| Skills | aa |
-| Teams | aa |
-| Socials | aa |
-| contact | aa |
+| Intro | Presenting myself and socials |
+| About Me | Information about my personality |
+| Companies | Cards containing Companies I've woked with |
+| Projects | Cards containing projects |
+| Tech Skills | Skill List |
 
 
 
