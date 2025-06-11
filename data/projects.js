@@ -1,4 +1,11 @@
 let projects = [
+    {
+        title: 'Zapify',
+        img: require('@/assets/projects/zapify.png'),
+        description: 'Zapify é uma aplicação web desenvolvida para a empresa Techify que funciona como interface para criação de instâncias de Whatsapp, fornecendo mais praticidade na criação de bots de Whatsapp.',
+        stack: 'ReactJS, NodeJS',
+        link: 'https://zapify.online'
+    },
     { 
         title: 'Web Mailer',
         img: require('@/assets/projects/mailer.png'),
@@ -6,17 +13,10 @@ let projects = [
         stack: 'Angular, NodeJS',
         link: 'https://github.com/devarthurmiranda/MailingAppContainerization/blob/main/README.md'
     },
-    {
-        title: 'Calculadora de IMC',
-        img: require('@/assets/projects/imc.png'),
-        description: 'Aplicativo de Calculadora de Índice de Massa Corporal (IMC).',
-        stack: 'Flutter',
-        link: 'https://github.com/devarthurmiranda/app_imc/blob/main/README.md'
-    },
     { 
         title: 'Hotel RJ',
         img: require('@/assets/projects/riodejaneiro.png'),
-        description: 'Site de um hotel fictício do Rio de Janeiro.',
+        description: 'Site estilizado de um hotel fictício do Rio de Janeiro.',
         stack: 'Bootstrap',
         link: 'https://github.com/devarthurmiranda/RioDeJaneiroWebsite/blob/master/README.md'
     },
