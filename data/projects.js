@@ -2,7 +2,7 @@ let projects = [
     {
         title: 'Zapify',
         img: require('@/assets/projects/zapify.png'),
-        description: 'Zapify é uma aplicação web desenvolvida para a empresa Techify que funciona como interface para criação de instâncias de Whatsapp, fornecendo mais praticidade na criação de bots de Whatsapp.',
+        description: 'Zapify é uma interface para criação de instâncias de Whatsapp desenvolvida para a empresa Techify.',
         stack: 'ReactJS, NodeJS',
         link: 'https://zapify.online'
     },
