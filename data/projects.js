@@ -1,5 +1,12 @@
 let projects = [
     {
+        title: 'Attendant AI',
+        img: require('@/assets/projects/attendantai.png'),
+        description: 'Attendant AI utiliza uma arquitetura de multiagentes para realizar atendimento de help desk.',
+        stack: 'N8N, EvolutionAPI',
+        link: 'https://privatelink.com'
+    },
+    {
         title: 'Zapify',
         img: require('@/assets/projects/zapify.png'),
         description: 'Zapify é uma interface para criação de instâncias de Whatsapp desenvolvida para a empresa Techify.',
