@@ -7,6 +7,13 @@ let projects = [
         link: 'https://privatelink.com'
     },
     {
+        title: 'AI Hatespeech Detection',
+        img: require('@/assets/projects/hatespeech.png'),
+        description: 'Análise comparativa de modelos de Inteligência Artificial para detecção de Crimes de Ódio em tempo real',
+        stack: 'Python',
+        link: 'https://privatelink.com'
+    },
+    {
         title: 'Zapify',
         img: require('@/assets/projects/zapify.png'),
         description: 'Zapify é uma interface para criação de instâncias de Whatsapp desenvolvida para a empresa Techify.',
