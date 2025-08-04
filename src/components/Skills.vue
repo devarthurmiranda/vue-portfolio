@@ -1,6 +1,6 @@
 <template>
   <div class="container-sm container">
-    <div class="row">
+    <div class="row gy-5">
       <div class="title">
         <h2>Tech Skills</h2>
       </div>
@@ -52,7 +52,6 @@ export default {
   height: 100px;
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 20px;
 }
 
 /* Image styles */
