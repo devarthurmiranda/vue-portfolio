@@ -1,14 +1,16 @@
 <template>
-    <div class="container-sm container d-flex justify-content-between">
-        <div class="row">
-            <div class="col-sm image-me ">
-                <img class="img-fluid" src="../assets/euu.png" />
+    <div class="intro container-sm">
+        <div class="intro-content">
+            <div class="image-me">
+                <img class="img-fluid" src="../assets/euu.png" alt="Profile" />
             </div>
-            <div class="col-sm presentation">
+            <div class="presentation">
                 <h1>{{ intro.title }}</h1>
                 <p>{{ intro.description }}</p>
                 <div class="socials">
-                    <a v-for="social in socials" :href="social.link" :key="social"><img class="img-socials" :src="social.img" alt="github"></a>
+                    <a v-for="social in socials" :href="social.link" :key="social.link">
+                        <img class="img-socials" :src="social.img" :alt="social.title || 'social link'">
+                    </a>
                 </div>
             </div>
         </div>
@@ -31,25 +33,33 @@ export default {
 </script>
 
 <style scoped>
-.container {
+.intro {
     padding-top: 10%;
     width: 70%;
+    margin: 0 auto;
 }
 
 .presentation {
     padding-top: 50px;
-}
-
-.row {
-    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 .socials {
     padding-top: 3%;
-    text-align: center;
     display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
+.intro-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
 
 
 /** Image styles */
@@ -73,15 +83,43 @@ export default {
 
 
 /** Text styles */
-.row h1 {
+.presentation h1 {
     font-size: 40px;
     color: #ffffff;
     font-weight: 600;
 
 }
 
-.row p {
+.presentation p {
     font-size: 18px;
     color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    .intro {
+        width: 90%;
+        text-align: center;
+        padding-top: 20%;
+    }
+
+    .intro-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .presentation {
+        padding-top: 30px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+
+    .img-fluid {
+        width: 60%;
+        max-width: 240px;
+    }
 }
 </style>

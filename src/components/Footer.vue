@@ -45,6 +45,11 @@ footer {
     margin-top: 10%;
 }
 
+.container {
+    margin: 0 auto;
+    text-align: center;
+}
+
 .row {
     color: white;
     text-align: center;

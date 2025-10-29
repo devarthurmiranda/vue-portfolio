@@ -29,14 +29,6 @@ export default {
 
 <style scoped>
 
-@media screen and (max-width: 768px){
-    .container {
-        width: 80%;
-        padding-top: 4%;
-
-    }
-}
-
 @media screen and (min-width: 768px){
     .container {
         width: 70%;
@@ -44,13 +36,23 @@ export default {
     }
 }
 
+.container {
+    margin: 0 auto;
+}
+
 .row {
     margin-top: 200px;
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
 }
 
 .description {
     width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .canva {
@@ -73,5 +75,38 @@ h2 {
 p {
     font-size: 18px;
     color: #ffffff;
+}
+
+@media screen and (max-width: 768px){
+    .container {
+        width: 90%;
+        padding-top: 10%;
+        text-align: center;
+    }
+
+    .row {
+        margin-top: 120px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .description {
+        width: 100%;
+        align-items: center;
+    }
+
+    .description p {
+        text-align: center;
+    }
+
+    .canva {
+        margin-top: 30px;
+    }
+
+    .img-fluid {
+        width: 80%;
+        max-width: 260px;
+    }
 }
 </style>

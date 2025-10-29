@@ -7,7 +7,6 @@
             <SwiperSlide v-for="(org, index) in orgs" :key="index">
                 <div class="slideCard">
                     <a :href=org.link >
-                        <img class="img-fluid" :src="org.img" :alt="org.name">
                         <h3>{{ org.name }}</h3>
                     </a>
                     <div class="description">
@@ -58,20 +57,20 @@ export default {
     justify-content: center;
 }
 
+.container {
+    margin: 0 auto;
+    text-align: center;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (max-width: 768px){
-    img {
-        height: 50px;
-        width: 60%;
-    }
-
     .container {
         padding-top: 15%;
         width: 90%;
+        text-align: center;
     }
 
     .slideCard {
-        height: 450px;
         width: 100%;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
         background-color: #262626;
@@ -83,13 +82,7 @@ export default {
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px){
-    img {
-        height: 50%;
-        width: 60%;
-    }
-
     .slideCard {
-        height: 400px;
         width: 100%;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
         background-color: #262626;
@@ -100,15 +93,11 @@ export default {
     .container {
         padding-top: 15%;
         width: 70%;
+        margin: 0 auto;
+        text-align: center;
     }
 }
 
-
-.swiper-slide img {
-    border-radius: 20px;
-    max-width: 100%;
-    max-height: 90%;
-}
 
 .slides {
     max-width: 100%;

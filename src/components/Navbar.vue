@@ -67,4 +67,21 @@ export default {
     text-decoration: none;
     color: rgb(155, 74, 74);
 }
+
+@media screen and (max-width: 768px) {
+    .navbar-brand {
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-nav {
+        margin: 20px auto 0;
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        margin-right: 20px;
+    }
+}
 </style>

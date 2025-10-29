@@ -50,6 +50,11 @@ export default {
   margin-top: 15%;
 }
 
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
 @media screen and (max-width: 768px){
   .slideCard{
     height: 350px;
@@ -63,6 +68,8 @@ export default {
 
   .container {
     width: 90%;
+    margin: 0 auto;
+    text-align: center;
   }
 }
 
@@ -79,6 +86,8 @@ export default {
 
   .container {
     width: 70%;
+    margin: 0 auto;
+    text-align: center;
   }
 
 

@@ -1,12 +1,15 @@
 <template>
   <div class="container-sm container">
-    <div class="row gy-5">
-      <div class="title">
-        <h2>Tech Skills</h2>
-      </div>
-      
-      <div id="skills" class="col-md-3" v-for="(skill, index) in skills" :key="index">
-        <a :href="skill.wiki">
+    <div class="title">
+      <h2>Tech Skills</h2>
+    </div>
+    <div class="skills-grid">
+      <div
+        class="skill-card"
+        v-for="(skill, index) in skills"
+        :key="`skill-${index}`"
+      >
+        <a class="skill-link" :href="skill.wiki">
           <v-card>
             <v-card-title>
               <img :src="skill.icon" alt="" class="icon">
@@ -41,8 +44,6 @@ export default {
   text-align: center;
 }
 
-
-
 .title {
   margin-bottom: 5%;
 }
@@ -60,6 +61,23 @@ export default {
   height: 50px;
 }
 
+.skill-card {
+  display: flex;
+  justify-content: center;
+}
+
+.skill-link {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+.skill-link:hover {
+  text-decoration: none;
+  color: rgb(155, 74, 74);
+  transition: 400ms;
+}
+
 /* Text styles */
 h2 {
   text-align: center;
@@ -67,14 +85,22 @@ h2 {
   font-weight: bold;
 }
 
-.col-md-3 a {
-    color: white;
-    text-decoration: none;
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  justify-items: center;
 }
 
-.col-md-3 a:hover {
-    text-decoration: none;
-    color: rgb(155, 74, 74);
-    transition: 400ms;
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-items: center;
+  }
 }
 </style>
