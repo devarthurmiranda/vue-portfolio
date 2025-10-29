@@ -70,20 +70,23 @@ export default {
     flex-direction: column;
     align-items: center;
     gap: 18px;
+    justify-content: space-between;
     position: relative;
     overflow: hidden;
     margin: 10px;
-    min-height: 320px;
+    height: 360px;
 }
 
 .slideCard a {
     width: 100%;
+    flex-shrink: 0;
 }
 
 .description {
     flex: 1;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .slideCard::before {
@@ -129,12 +132,8 @@ export default {
     .slideCard {
         padding: 22px 20px;
         border-radius: 18px;
-        min-height: 300px;
+        height: 300px;
         gap: 14px;
-    }
-
-    .slideCard p {
-        min-height: 64px;
     }
 }
 
@@ -195,6 +194,7 @@ a:hover {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    width: 100%;
 }
 
 </style>

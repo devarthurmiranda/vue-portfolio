@@ -72,10 +72,11 @@ export default {
   flex-direction: column;
   align-items: center;
   gap: 18px;
+  justify-content: space-between;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   position: relative;
   overflow: hidden;
-  min-height: 420px;
+  height: 420px;
   margin: 10px;
 }
 
@@ -114,6 +115,7 @@ export default {
   align-items: center;
   gap: 14px;
   width: 100%;
+  flex-shrink: 0;
 }
 
 .slideCard h3{
@@ -148,6 +150,8 @@ export default {
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  margin-top: auto;
+  width: 100%;
 }
 
 .swiper-slide{
@@ -186,20 +190,24 @@ p {
   }
 
   .slideCard{
-    padding: 22px 20px;
+    padding: 18px 16px;
     border-radius: 20px;
-    min-height: 340px;
+    height: 320px;
     margin: 8px 0;
-    gap: 14px;
+    gap: 12px;
   }
 
   .slideCard img{
-    max-width: 300px;
-    height: 160px;
+    max-width: 280px;
+    height: 140px;
   }
 
   .slideCard p{
-    min-height: 84px;
+    min-height: 60px;
+  }
+
+  .slideCard a{
+    gap: 10px;
   }
 }
 
