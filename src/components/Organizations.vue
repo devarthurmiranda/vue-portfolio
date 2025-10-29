@@ -127,8 +127,14 @@ export default {
     }
 
     .slideCard {
-        padding: 26px 22px;
-        border-radius: 20px;
+        padding: 22px 20px;
+        border-radius: 18px;
+        min-height: 300px;
+        gap: 14px;
+    }
+
+    .slideCard p {
+        min-height: 64px;
     }
 }
 
@@ -157,6 +163,13 @@ h2 {
 h3 {
     font-weight: 600;
     color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    min-height: 46px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 a {

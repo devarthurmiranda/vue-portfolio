@@ -121,6 +121,12 @@ export default {
   margin: 0;
   color: #f4f4f4;
   letter-spacing: 0.4px;
+  min-height: 52px;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .slideCard img{
@@ -180,10 +186,20 @@ p {
   }
 
   .slideCard{
-    padding: 26px 22px;
-    border-radius: 22px;
-    min-height: 380px;
-    margin: 10px 0;
+    padding: 22px 20px;
+    border-radius: 20px;
+    min-height: 340px;
+    margin: 8px 0;
+    gap: 14px;
+  }
+
+  .slideCard img{
+    max-width: 300px;
+    height: 160px;
+  }
+
+  .slideCard p{
+    min-height: 84px;
   }
 }
 
