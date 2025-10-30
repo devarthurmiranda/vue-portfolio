@@ -63,7 +63,6 @@ export default {
     border-radius: 24px;
     background: linear-gradient(135deg, rgba(36, 36, 36, 0.95), rgba(18, 18, 18, 0.95));
     border: 1px solid rgba(155, 74, 74, 0.35);
-    box-shadow: 0 24px 45px rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(8px);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     display: flex;
@@ -104,7 +103,6 @@ export default {
 .slideCard:hover {
     transform: translateY(-6px);
     border-color: rgba(155, 74, 74, 0.65);
-    box-shadow: 0 28px 55px rgba(155, 74, 74, 0.18);
 }
 
 .slideCard:hover::before {
