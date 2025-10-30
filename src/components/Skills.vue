@@ -1,5 +1,5 @@
 <template>
-  <div class="container-sm container">
+  <div id="skills" class="container-sm container">
     <div class="title">
       <h2>Tech Skills</h2>
     </div>
