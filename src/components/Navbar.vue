@@ -70,7 +70,7 @@ export default {
 
 @media screen and (max-width: 768px) {
     .navbar-brand {
-        margin-left: 0;
+        margin-left: 12px;
         display: flex;
         align-items: center;
     }
