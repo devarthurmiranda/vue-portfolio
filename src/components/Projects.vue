@@ -1,7 +1,7 @@
 <template>
   <div id="projects" class="container container-sm  w-70 p-3">
     <div class="title">
-      <h2>Projetos</h2>
+      <h2>Projects</h2>
     </div>
     <Swiper :pagination="{dynamicBullets: true}" :modules="modules">
       <SwiperSlide v-for="(project, index) in projects" :key="index">

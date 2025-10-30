@@ -1,7 +1,8 @@
 let orgs =[
-    { name: 'Techify', link:'https://www.linkedin.com/company/techifybrasil/', occupation: 'Contribuí como Desenvolvedor Full-Stack, desenvolvendo soluções de automação e inteligência artificial para empresas parceiras como a Redes Brasil! Pude desenvolver habilidades técnicas em programação, automação e IA.'},
-    { name: 'PekiCode', link:'https://www.linkedin.com/company/peki-code/', occupation: 'Contribuo como Project Manager e Desenvolvedor Full-Stack, liderando a equipe de desenvolvimento e garantindo a entrega de projetos de alta qualidade. Pude desenvolver habilidades de liderança, teamwork e gestão de pessoas.'},
-    { name: 'TopNet', link:'https://www.facebook.com/topnetprovedordeinternet/?locale=pt_BR', occupation: 'Contribuí como Technical Support respondendo chamados de clientes e configurando roteadores. Pude desenvolver habilidades na área de redes de computadores, resolução de problemas e comunicação.'},
+    { name: 'Techify', link:'https://www.linkedin.com/company/techifybrasil/', occupation: 'Contributed as a Full‑Stack Developer, building automation and AI solutions for partner companies such as Redes Brasil. I strengthened technical skills in programming, automation, and AI.'},
+    { name: 'PekiCode', link:'https://www.linkedin.com/company/peki-code/', occupation: 'Contribute as a Project Manager and Full‑Stack Developer, leading the development team and ensuring the delivery of high‑quality projects. I developed leadership, teamwork, and people management skills.'},
+    { name: 'TopNet', link:'https://www.facebook.com/topnetprovedordeinternet/?locale=pt_BR', occupation: 'Contributed as Technical Support, handling customer tickets and configuring routers. I gained skills in computer networking, troubleshooting, and communication.'},
   ];
 
 export default orgs;
+

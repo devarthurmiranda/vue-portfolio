@@ -1,8 +1,9 @@
 let about = {
-        title: 'Sobre mim',
-        first_paragraph: 'Desde que comecei a desenvolver software sempre tive o objetivo de ajudar pessoas, e hoje, depois de anos de estudo e trabalho, posso dizer que desenvolvi projetos como um modelo de IA para combater crimes nas redes sociais e trabalhei direta ou indiretamente com empresas como a Techify, Redes Brasil, TopNet, PekiCode, Complem entre outras.',
-        second_paragraph: 'Atualmente trabalho na Techify, empresa focada em treinamentos de automação e inteligência artificial, fui diretor de projetos da empresa júnior Pekicode, que foi inovadora em sua proposta de introduzir acadêmicos de ensino superior ao mercado de trabalho regional. Além disso, também desenvolvi soluções diversas para operações internas em outras empresas.',
+        title: 'About Me',
+        first_paragraph: 'Since I started developing software, I have always aimed to help people. Today, after years of study and work, I can say I have built projects such as an AI model to combat crimes on social networks and worked directly or indirectly with companies like Techify, Redes Brasil, TopNet, PekiCode, Complem, among others.',
+        second_paragraph: 'I currently work at Techify, a company focused on automation and AI training. I served as Project Director at the junior enterprise PekiCode, which was innovative in introducing undergraduate students to the regional job market. I have also developed various solutions for internal operations at other companies.',
         third_paragraph: ''
 }
 
 export default about;
+

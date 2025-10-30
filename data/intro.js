@@ -1,7 +1,8 @@
 let intro = {
-    title: "Olá, sou Arthur Miranda!",
-    description: "Desenvolvedor de Software pela Techify e graduando em Ciências da Computação no Instituto Federal Goiano."
+    title: "Hi, I'm Arthur Miranda!",
+    description: "Software Developer at Techify and Computer Science undergraduate at Instituto Federal Goiano."
 
 };
 
 export default intro;
+

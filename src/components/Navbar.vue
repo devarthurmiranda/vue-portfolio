@@ -10,13 +10,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item ms-auto mx-2">
-                        <a class="nav-link" href="#about">Sobre mim</a>
+                        <a class="nav-link" href="#about">About Me</a>
                     </li>
                     <li class="nav-item ms-auto mx-2">
-                        <a class="nav-link" href="#organizations">Empresas</a>
+                        <a class="nav-link" href="#organizations">Companies</a>
                     </li>
                     <li class="nav-item ms-auto mx-2">
-                        <a class="nav-link" href="#projects">Projetos</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item ms-auto mx-2">
                         <a class="nav-link" href="#skills">Tech Skills</a>

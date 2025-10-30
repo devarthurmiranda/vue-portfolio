@@ -1,7 +1,7 @@
 <template>
     <div id="organizations" class="container-sm container">
         <div class="title">
-            <h2>Empresas</h2>
+            <h2>Companies</h2>
         </div>
         <Swiper :pagination="{ dynamicBullets: true }" :modules="modules">
             <SwiperSlide v-for="(org, index) in orgs" :key="index">
