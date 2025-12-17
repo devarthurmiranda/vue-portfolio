@@ -15,9 +15,9 @@
                     <li class="nav-item ms-auto mx-2">
                         <a class="nav-link" href="#organizations">Companies</a>
                     </li>
-                    <li class="nav-item ms-auto mx-2">
+                    <!--<li class="nav-item ms-auto mx-2">
                         <a class="nav-link" href="#projects">Projects</a>
-                    </li>
+                    </li>-->
                     <li class="nav-item ms-auto mx-2">
                         <a class="nav-link" href="#skills">Tech Skills</a>
                     </li>
