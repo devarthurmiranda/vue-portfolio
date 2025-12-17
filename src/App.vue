@@ -14,7 +14,7 @@ import Intro from './components/Intro.vue'
 import About from './components/About.vue'
 import Organizations from './components/Organizations.vue';
 import Skills from './components/Skills.vue';
-import Projects from './components/Projects.vue';
+//import Projects from './components/Projects.vue';
 import Footer from './components/Footer.vue';
 
 export default {
@@ -24,7 +24,7 @@ export default {
     Intro,
     About,
     Organizations,
-    Projects,
+  //  Projects,
     Skills,
     Footer
   },
