@@ -1,5 +1,5 @@
 let info = {
-    email: 'contato.arthurmorais.dev@gmail.com',
+    email: 'contact.arthur.miranda.dev@gmail.com',
 }
 
 export default info;
