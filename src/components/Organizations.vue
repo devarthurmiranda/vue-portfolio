@@ -3,7 +3,7 @@
         <div class="title">
             <h2>Companies</h2>
         </div>
-        <Swiper :pagination="{ dynamicBullets: true }" :modules="modules">
+        <Swiper :pagination="{ dynamicBullets: true }" :modules="modules" :breakpoints="breakpoints" class="swiper-container">
             <SwiperSlide v-for="(org, index) in orgs" :key="index">
                 <div class="slideCard">
                     <a :href=org.link >
@@ -12,7 +12,6 @@
                     <div class="description">
                         <p>{{ org.occupation }}</p>
                     </div>
-                    
                 </div>
             </SwiperSlide>
         </Swiper>
@@ -36,6 +35,23 @@ export default {
     setup() {
         return {
             modules: [Pagination],
+            breakpoints: {
+                // Mobile
+                320: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 15
+                },
+                // Tablet
+                640: {
+                    slidesPerView: 2.2,
+                    spaceBetween: 20
+                },
+                // Desktop
+                1024: {
+                    slidesPerView: 3.5,
+                    spaceBetween: 25
+                }
+            }
         };
     },
     data() {
@@ -47,20 +63,24 @@ export default {
 </script>
 
 <style scoped>
-.swiper {
-    text-align: center;
-    padding: 20px;
+.swiper-container {
+    padding-bottom: 40px; /* Space for pagination */
+}
+
+.title h2 {
+    margin-bottom: 30px; /* Reduced margin */
 }
 
 .swiper-slide {
     display: flex;
     justify-content: center;
+    height: auto; /* Allow slide to determine height */
 }
 
 .slideCard {
     width: 100%;
-    padding: 32px 28px;
-    border-radius: 24px;
+    padding: 20px 16px; /* Reduced padding */
+    border-radius: 16px; /* Smaller radius */
     background: linear-gradient(135deg, rgba(36, 36, 36, 0.95), rgba(18, 18, 18, 0.95));
     border: 1px solid rgba(155, 74, 74, 0.35);
     backdrop-filter: blur(8px);
@@ -68,12 +88,11 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 18px;
+    gap: 12px; /* Reduced gap */
     justify-content: space-between;
     position: relative;
     overflow: hidden;
-    margin: 10px;
-    height: 360px;
+    height: 220px; /* Significantly reduced height from 360px */
 }
 
 .slideCard a {
@@ -86,13 +105,14 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .slideCard::before {
     content: '';
     position: absolute;
     inset: 0;
-    border-radius: 24px;
+    border-radius: 16px;
     background: radial-gradient(circle at top, rgba(155, 74, 74, 0.12), transparent 60%);
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -101,7 +121,7 @@ export default {
 }
 
 .slideCard:hover {
-    transform: translateY(-6px);
+    transform: translateY(-4px); /* Subtle lift */
     border-color: rgba(155, 74, 74, 0.65);
 }
 
@@ -117,29 +137,31 @@ export default {
 .container {
     margin: 0 auto;
     text-align: center;
+    padding-top: 50px; /* Reduced top padding */
+    padding-bottom: 50px;
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (max-width: 768px){
     .container {
-        padding-top: 15%;
-        width: 90%;
+        padding-top: 10%;
+        width: 95%; /* Wider on mobile */
         text-align: center;
     }
 
     .slideCard {
-        padding: 22px 20px;
-        border-radius: 18px;
-        height: 300px;
-        gap: 14px;
+        padding: 16px 14px;
+        border-radius: 14px;
+        height: 200px; /* Even smaller on mobile */
+        gap: 10px;
     }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px){
     .container {
-        padding-top: 15%;
-        width: 70%;
+        padding-top: 5%;
+        width: 85%;
         margin: 0 auto;
         text-align: center;
     }
@@ -162,9 +184,10 @@ h3 {
     color: #f4f4f4;
     text-align: center;
     margin: 0;
-    min-height: 46px;
+    font-size: 1.1rem; /* Slightly smaller font */
+    min-height: auto; /* Remove fixed min-height */
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 1; /* Limit to 1 line if possible, or 2 */
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -185,9 +208,10 @@ a:hover {
 .slideCard p {
     color: #d7d7d7;
     margin: 0;
-    line-height: 1.6;
+    line-height: 1.4;
     text-align: center;
-    min-height: 72px;
+    font-size: 0.9rem; /* Smaller text */
+    min-height: auto;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
