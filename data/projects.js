@@ -1,8 +1,8 @@
 let projects = [
     {
-        title: 'Attendant AI',
+        title: 'Topnet AI',
         img: require('@/assets/projects/attendantai.png'),
-        description: 'Attendant AI uses a multi‑agent architecture to perform help desk support.',
+        description: 'Topnet AI uses a multi‑agent architecture to perform help desk support.',
         stack: 'N8N, EvolutionAPI',
         link: 'https://privatelink.com'
     },
