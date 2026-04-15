@@ -5,7 +5,8 @@ let skills = [
     { name: 'Node', icon: require('@/assets/skills/node.png'), wiki: 'https://en.wikipedia.org/wiki/Node.js' },
     { name: 'PostgreSQL', icon: require('@/assets/skills/postgresql.png'), wiki: 'https://en.wikipedia.org/wiki/PostgreSQL' },
     { name: 'Cloudflare', icon: require('@/assets/skills/cloudflare.png'), wiki: 'https://en.wikipedia.org/wiki/Cloudflare' },
-    { name: 'Coolify', icon: require('@/assets/skills/coolify.png'), wiki: 'https://coolify.io/' }
+    { name: 'Coolify', icon: require('@/assets/skills/coolify.png'), wiki: 'https://coolify.io/' },
+    { name: 'BigQuery', icon: require('@/assets/skills/bigquery.svg'), wiki: 'https://en.wikipedia.org/wiki/BigQuery' }
 ]
 
 export default skills;
